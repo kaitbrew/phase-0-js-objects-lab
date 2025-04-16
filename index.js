@@ -26,6 +26,10 @@ function removeEventProperty(attendee){
 function addCheckedInProperty(attendee){
   attendee.checkedIn=true;
 }
+
+function updateTicketPrice(attendee, newPrice){
+  attendee.ticketPrice=newPrice;
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
